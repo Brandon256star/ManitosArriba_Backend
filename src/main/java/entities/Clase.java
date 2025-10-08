@@ -4,13 +4,11 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
-public class Usuario
+public class Clase
 {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int idUsuario;
-    private String Username;
-    private String Password;
+    private int idClase;
+    private String ClasePersonalizada;
 
 }

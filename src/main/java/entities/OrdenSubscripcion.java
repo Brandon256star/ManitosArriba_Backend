@@ -4,13 +4,15 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
-public class Usuario
-{
+import java.time.LocalDate;
 
+public class OrdenSubscripcion
+{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int idUsuario;
-    private String Username;
-    private String Password;
+    private int idOrdenSubscripcion;
+    private String Estado;
+    private LocalDate FechaInicio;
+    private LocalDate FechaFin;
 
 }
